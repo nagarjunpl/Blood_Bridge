@@ -81,7 +81,7 @@ Follow these steps to set up and run the Blood Bank project on your local machin
 
 - Database Name: `bloodbridge`
 - Tables:
-  - `request_donor`
+  - `donation_request`
   - `users`
   - `donors`
 - Import file: `bloodbridge_schema.sql`
