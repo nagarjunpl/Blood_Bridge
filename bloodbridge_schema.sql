@@ -25,6 +25,8 @@ CREATE TABLE IF NOT EXISTS donors (
     FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+-- This table is not implemented in the current schema
+-- Receivers Table
 -- Donation Requests Table
 CREATE TABLE IF NOT EXISTS donation_requests (
     request_id INT AUTO_INCREMENT PRIMARY KEY,

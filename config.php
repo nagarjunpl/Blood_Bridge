@@ -2,7 +2,7 @@
 // Database configuration
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_PASS', ''); # ADD YOUR PASSWORD HERE
 define('DB_NAME', 'bloodbridge');
 define('DB_PORT', '3307');
 // Create connection
