@@ -86,10 +86,3 @@ Follow these steps to set up and run the Blood Bank project on your local machin
   - `donors`
 - Import file: `bloodbridge_schema.sql`
 
----
-
-## 📌 Notes
-
-- Make sure `config.php` has the correct database connection credentials:
-  ```php
-  $conn = new mysqli("localhost", "root", "", "bloodbridge");
