@@ -1,11 +1,13 @@
 <?php
-require_once 'config.php';
+require_once 'config.php'; # Include your database configuration file
 session_start();
 
+# Ensure user is logged in
 if (!isset($_SESSION['user_id'])) {
-    die("Please login first");
+    die("Please login first"); 
 }
 
+# Handle form submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user_id = $_SESSION['user_id'];
     $blood_type = $_POST['blood_type'];
@@ -30,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($stmt->execute()) {
         header("Location: index.php?page=home");
     } else {
-        echo "Error: " . $stmt->error;
+        echo "Error: " . $stmt->error; # Display error message
     }
 
     $stmt->close();
