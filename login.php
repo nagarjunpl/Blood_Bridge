@@ -18,18 +18,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['user_id'] = $user['user_id'];
             $_SESSION['email'] = $user['email'];
             $_SESSION['role'] = $user['role'];
+
+            // close resources before redirecting
+            $stmt->close();
+            $conn->close();
             
             header("Location: index.php?page=home");
             exit();
         } else {
+            // close resources before terminating
+            $stmt->close();
+            $conn->close();
             die("Invalid password");
         }
     } else {
+        // close resources before terminating
+        $stmt->close();
+        $conn->close();
         die("User not found");
     }
-
-    $stmt->close();
 }
-
-$conn->close();
 ?>
