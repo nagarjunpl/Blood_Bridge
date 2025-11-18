@@ -16,13 +16,21 @@ This is a web-based Blood Bank Management System built using PHP and MySQL. It a
 ## 📦 Project Structure
 
 bloodbridge/
+
 ├── config.php
-├── fetch_donors,php
+
+├── fetch_donors.php
+
 ├── index.php
+
 ├── login.php
+
 ├── logout.php
+
 ├── register.php
+
 ├── register_donor.php
+
 └── bloodbridge_schema.sql ← Database file
 
 ---
